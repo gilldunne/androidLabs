@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" > 
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fahrenheitEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:onClick="convert"
+        android:text="Convert" />
+
+    <EditText
+        android:id="@+id/celsiusEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/celsiusTextView"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/celsiusEditTextHint" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/celsiusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/celsiusEditText"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:text="Celsius" />
+
+    <TextView
+        android:id="@+id/fahrenheitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fahrenheitEditText"
+        android:layout_below="@+id/celsiusEditText"
+        android:layout_marginTop="26dp"
+        android:text="Fahrenheit" />
+
+    <EditText
+        android:id="@+id/fahrenheitEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/celsiusEditText"
+        android:layout_below="@+id/fahrenheitTextView"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+</RelativeLayout>
