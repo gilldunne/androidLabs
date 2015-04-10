@@ -55,13 +55,13 @@ public class MainActivity extends ActionBarActivity implements OnItemSelectedLis
             if(w.getCity().equalsIgnoreCase(city)) {
                 temperatureV.setText(w.getTemperature() + " Celsius" );
                 if (w.getCondidtions() == WeatherConditions.Sunny){
-                    conditionsV.setImageResource(R.mipmap.sunny);
+                    conditionsV.setImageResource(R.drawable.sunny);
                 }
                 else if (w.getCondidtions() == WeatherConditions.Cloudy){
-                    conditionsV.setImageResource(R.mipmap.cloudy);
+                    conditionsV.setImageResource(R.drawable.cloudy);
                 }
                 else if (w.getCondidtions() == WeatherConditions.Rain){
-                    conditionsV.setImageResource(R.mipmap.rain);
+                    conditionsV.setImageResource(R.drawable.rain);
                 }
             }
         }
