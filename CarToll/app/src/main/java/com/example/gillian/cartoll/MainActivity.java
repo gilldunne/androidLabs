@@ -47,19 +47,14 @@ public class MainActivity extends ActionBarActivity implements OnItemSelectedLis
         String vehicle = parent.getItemAtPosition(pos).toString();
         ImageView vehicleV = (ImageView) findViewById(R.id.vehicleImageView);
 
-//        Error is here somewhere... i think!!
-        for(Toll t: data){
-            if(t.getVehicleType().equals(vehicle)){ // Not sure whats going on really! 
-                if(t.getVehicleType()==VehicleType.Truck){
-                    vehicleV.setImageResource(R.drawable.truck);
-                }
-                else if(t.getVehicleType()==VehicleType.Bus){
-                    vehicleV.setImageResource(R.drawable.bus);
-                }
-                else if(t.getVehicleType()==VehicleType.Car){
-                    vehicleV.setImageResource(R.drawable.car);
-                }
-            }
+        if(vehicle == VehicleType.Truck.toString()){
+            vehicleV.setImageResource(R.drawable.truck);
+        }
+        else if(vehicle == VehicleType.Bus.toString()){
+            vehicleV.setImageResource(R.drawable.bus);
+        }
+        else if(vehicle == VehicleType.Car.toString()){
+            vehicleV.setImageResource(R.drawable.car);
         }
 
     }
