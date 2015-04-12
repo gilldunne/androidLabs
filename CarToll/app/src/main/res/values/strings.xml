@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CarToll</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="vehicle_label">Select Vehicle</string>
+    <string name="calc_label">Calculate Cost</string>
+    <string name="hasTag_label">Has Tag?</string>
+
+</resources>
