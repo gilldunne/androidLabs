@@ -14,6 +14,9 @@ public class Toll {
     public double getCost(){
         return cost;
     };
+    public void setCost(double cost){
+        this.cost = cost;
+    };
 
     private boolean hasTag;
     public boolean getHasTag(){
@@ -27,9 +30,7 @@ public class Toll {
 
     public Toll(VehicleType vehicleType){
         this.vehicleType=vehicleType;
-    }
 
-    public Toll(boolean hasTag, VehicleType vehicleType){
         if(vehicleType.equals(vehicleType.Car)){
             cost = 1.50;
         }
@@ -39,7 +40,5 @@ public class Toll {
         else if(vehicleType.equals(vehicleType.Truck)){
             cost = 2.50;
         }
-        this.hasTag = hasTag;
-        this.vehicleType = vehicleType;
     }
 }
