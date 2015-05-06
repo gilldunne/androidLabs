@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">M50 Toll Calculator</string>
+    <string name="action_settings">Settings</string><string name="calcTollButton">Calculate Toll</string>
+    <string name="tagCheckBox">Electronic Tag</string>
+    <string name="textViewSpinnerLabel">Vehicle Type</string>
+    <string-array name="vehicleTypeItems">
+        <item >Car</item>
+        <item >PSV</item>
+        <item >Bus</item>
+        <item >Goods</item>
+    </string-array>
+ 
+</resources>

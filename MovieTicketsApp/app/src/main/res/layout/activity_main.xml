@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewSpinnerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ticketTypeSpinner"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/textViewSpinnerLabel" />
+
+    <Spinner
+        android:id="@+id/ticketTypeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loyaltyCheckBox"
+        android:layout_below="@+id/textViewSpinnerLabel"
+        android:entries="@array/ticketTypeItems" />
+
+    <CheckBox
+        android:id="@+id/loyaltyCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ticketTypeSpinner"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/loyaltyCheckBox" />
+
+    <EditText
+        android:id="@+id/numTicketsEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/loyaltyCheckBox"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="@string/numTicketsEditText" />
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numTicketsEditText"
+        android:layout_below="@+id/numTicketsEditText"
+        android:layout_marginTop="52dp"
+        android:onClick="calcPrice"
+        android:text="@string/calcPrice" />
+
+    <TextView
+        android:id="@+id/priceLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calcButton"
+        android:layout_marginTop="26dp"
+        android:text="@string/priceLabel" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calcButton"
+        android:layout_toRightOf="@+id/priceLabelTextView"
+        android:layout_marginTop="26dp" />
+
+</RelativeLayout>

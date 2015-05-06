@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textViewSpinnerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/vehicleTypeSpinner"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/textViewSpinnerLabel" />
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tagCheckBox"
+        android:layout_below="@+id/tagCheckBox"
+        android:layout_marginTop="52dp"
+        android:onClick="calcToll"
+        android:text="@string/calcTollButton" />
+
+    <CheckBox
+        android:id="@+id/tagCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/vehicleTypeSpinner"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/tagCheckBox" />
+
+    <Spinner
+        android:id="@+id/vehicleTypeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tagCheckBox"
+        android:layout_below="@+id/textViewSpinnerLabel"
+        android:entries="@array/vehicleTypeItems" />
+   
+</RelativeLayout>
+<!-- From: file:/C:/Users/Gillian/Source/Repos/androidLabs/M50TollCalculator/app/src/main/res/layout/activity_main.xml -->

@@ -1,0 +1,13 @@
+<!--Gillian Dunne X00094469-->
+<resources>
+    <string name="app_name">Lotto Number Picker</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="default_max_numbers_label">45</string>
+    <string name="default_num_of_numbers_label">6</string>
+
+    <string name="num_of_numbers_label">Number of numbers to be drawn</string>
+    <string name="max_numbers_label">Maximum numbers that can be picked</string>
+    <string name="generate">Generate Numbers</string>
+    <string name="generatedNumbers_label">Generated Numbers are: </string>
+</resources>
